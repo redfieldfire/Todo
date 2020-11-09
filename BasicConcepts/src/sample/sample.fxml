@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="322.0" prefWidth="600.0" style="-fx-background-color: black; -fx-border-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="203.0" layoutY="27.0" text="First Program" textFill="WHITE">
+         <font>
+            <Font name="Microsoft JhengHei" size="31.0" />
+         </font>
+      </Label>
+      <Button fx:id="bMath" layoutX="198.0" layoutY="196.0" mnemonicParsing="false" onMouseClicked="#math" onMouseEntered="#enteredMath" onMouseExited="#exitedMath" prefHeight="54.0" prefWidth="206.0" style="-fx-background-radius: 30; -fx-background-color: BLACK; -fx-border-color: white; -fx-border-radius: 30;" text="Math" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Microsoft Yi Baiti" size="29.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="bExit" layoutX="551.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#exit" onMouseEntered="#enteredExit" onMouseExited="#exitedExit" style="-fx-background-radius: 30; -fx-background-color: BLACK; -fx-border-color: WHITE; -fx-border-radius: 30;" text="Exit" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Microsoft Yi Baiti" size="13.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <TextField fx:id="tf" layoutX="138.0" layoutY="111.0" promptText="Write here ur number" style="-fx-background-color: Black; -fx-border-color: White;">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </TextField>
+      <Label fx:id="l" layoutX="197.0" layoutY="276.0" prefHeight="32.0" prefWidth="206.0" textAlignment="CENTER">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#comboBox" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: BLACK; -fx-border-color: WHITE; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controlador">
+   <children>
+      <Label layoutX="246.0" layoutY="14.0" text="Pescao" textFill="WHITE">
+         <font>
+            <Font name="Microsoft YaHei Light" size="34.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cb" layoutX="23.0" layoutY="80.0" onMouseClicked="#comboBox" prefHeight="39.0" prefWidth="250.0" promptText="Tipo de Pez" />
+      <TextField fx:id="tf" layoutX="280.0" layoutY="80.0" prefHeight="39.0" prefWidth="257.0" promptText="Por nacimiento">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btprint" disable="true" layoutX="23.0" layoutY="128.0" mnemonicParsing="false" onMouseClicked="#printPelaos" prefHeight="18.0" prefWidth="559.0" style="-fx-background-color: BLACK; -fx-border-color: WHITE;" text="Print" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <ListView fx:id="listview" layoutX="23.0" layoutY="171.0" prefHeight="211.0" prefWidth="559.0" />
+      <Button fx:id="btinsert" layoutX="543.0" layoutY="80.0" mnemonicParsing="false" onAction="#insertPelao" onMouseClicked="#insertPelao" prefHeight="39.0" prefWidth="39.0" style="-fx-background-color: BLACK; -fx-border-color: WHITE;" text="&gt;" textFill="WHITE" />
+   </children>
+</AnchorPane>
